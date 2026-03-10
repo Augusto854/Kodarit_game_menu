@@ -28,6 +28,16 @@ public class FadeControl : MonoBehaviour
         originalColor = fadeObject.color;
     }
 
+    public void FadeIn()
+    {
+        StartFade(originalColor.a);
+    }
+
+    public void FadeOut()
+    {
+        StartFade(0f);
+    }
+
     private void StartFade(float targetAlpha)
     {
         if (coroutine != null)
