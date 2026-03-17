@@ -130,8 +130,6 @@ GameObject:
   - component: {fileID: 304719801}
   - component: {fileID: 304719803}
   - component: {fileID: 304719802}
-  - component: {fileID: 304719805}
-  - component: {fileID: 304719804}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -146,16 +144,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304719800}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2141391259}
+  m_Father: {fileID: 2106769511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14, y: 167}
+  m_AnchoredPosition: {x: 0, y: 167}
   m_SizeDelta: {x: 550, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304719802
@@ -258,34 +256,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304719800}
   m_CullTransparentMesh: 1
---- !u!114 &304719804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304719800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cdbbcab0a8a13545a19673a796534bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationEffect
-  speed: 2
-  angle: 10
---- !u!114 &304719805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304719800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cdbbcab0a8a13545a19673a796534bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationEffect
-  speed: 2
-  angle: 10
 --- !u!1 &323164336
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +267,6 @@ GameObject:
   - component: {fileID: 323164337}
   - component: {fileID: 323164339}
   - component: {fileID: 323164338}
-  - component: {fileID: 323164340}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -312,16 +281,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323164336}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2141391259}
+  m_Father: {fileID: 2106769511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20, y: -164}
+  m_AnchoredPosition: {x: 0, y: -161}
   m_SizeDelta: {x: 550, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &323164338
@@ -424,20 +393,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323164336}
   m_CullTransparentMesh: 1
---- !u!114 &323164340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 323164336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cdbbcab0a8a13545a19673a796534bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationEffect
-  speed: 2
-  angle: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1164420558}
   - component: {fileID: 1164420557}
+  - component: {fileID: 1164420559}
   m_Layer: 0
   m_Name: Main_MenuManager
   m_TagString: Untagged
@@ -783,6 +739,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1164420559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164420556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 895fd5b77fc844d40bfcc9f33341b920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Selection
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  selectColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  items:
+  - {fileID: 304719802}
+  - {fileID: 1264878901}
+  - {fileID: 323164338}
 --- !u!1 &1264878899
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +768,6 @@ GameObject:
   - component: {fileID: 1264878900}
   - component: {fileID: 1264878902}
   - component: {fileID: 1264878901}
-  - component: {fileID: 1264878903}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -809,12 +782,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264878899}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2141391259}
+  m_Father: {fileID: 2106769511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -921,20 +894,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264878899}
   m_CullTransparentMesh: 1
---- !u!114 &1264878903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1264878899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cdbbcab0a8a13545a19673a796534bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RotationEffect
-  speed: 2
-  angle: 10
 --- !u!1 &1617067432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,6 +1090,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949174071}
   m_CullTransparentMesh: 1
+--- !u!1 &2106769510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2106769511}
+  - component: {fileID: 2106769512}
+  m_Layer: 5
+  m_Name: TextRotation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2106769511
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106769510}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 323164337}
+  - {fileID: 1264878900}
+  - {fileID: 304719801}
+  m_Father: {fileID: 2141391259}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2106769512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106769510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cdbbcab0a8a13545a19673a796534bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotationEffect
+  speed: 2
+  angle: 10
 --- !u!1 &2141391258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,9 +1175,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1949174072}
-  - {fileID: 304719801}
-  - {fileID: 1264878900}
-  - {fileID: 323164337}
+  - {fileID: 2106769511}
   - {fileID: 1652840457}
   m_Father: {fileID: 1617067433}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
