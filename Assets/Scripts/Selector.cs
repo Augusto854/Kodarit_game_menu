@@ -2,7 +2,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 
-public class Selection : MonoBehaviour
+public class Selector : MonoBehaviour
 {
     public Color normalColor = Color.white;
 
@@ -31,6 +31,17 @@ public class Selection : MonoBehaviour
             index = (index + 1) % items.Length;
             ChangeColors();
         } 
+
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+        {
+            ActivateItem(index);
+        }
+
+    }
+
+    public void ActivateItem(int i)
+    {
+        Debug.Log("Painoit nappia:" + items[i].text);
     }
 
     void ChangeColors()
