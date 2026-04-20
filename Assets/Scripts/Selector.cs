@@ -1,6 +1,7 @@
-using System.Linq;
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Selector : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class Selector : MonoBehaviour
     public TMP_Text[] items; //meidän napit listassa
     public Color[] colors;
     private int index = 0;
+
+    public FadeControl fade;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,6 +46,30 @@ public class Selector : MonoBehaviour
     public void ActivateItem(int i)
     {
         Debug.Log("Painoit nappia:" + items[i].text);
+
+        if (items[i].text == "{Start game{")
+        {
+            StartCoroutine(ChangeScene("Minigames"));
+        }
+        else if (items[i].text == "[Settings[")
+        {
+            StartCoroutine(ChangeScene("Settings"));
+        }
+    }
+
+    private IEnumerator ChangeScene(string sceneName)
+    {
+        fade.FadeIn();
+
+        yield return new WaitForSeconds(fade.fadeDuration);
+
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void SetIndex(int i)
+    {
+        index = i;
+        ChangeColors();
     }
 
     void ChangeColors()
